@@ -5,7 +5,7 @@ export const db = mysql.createConnection({
     host: process.env.MYSQLHOST, // Use a variável de ambiente do Railway
     user: process.env.MYSQLUSER,
     password: process.env.MYSQLPASSWORD,
-    database: "login",
+    database: process.env.MYSQLDATABASE,
     port: process.env.MYSQLPORT || 3306, // Use a porta correta
 });
 

@@ -3,10 +3,6 @@ import userRoutes from "./routes/users.js"
 import cors from "cors";
 import dotenv from "dotenv";
 
-console.log(process.env); // Isso irá listar todas as variáveis de ambiente
-
-
-
 const app = express();
 
 app.use(express.json());
