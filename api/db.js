@@ -1,22 +1,23 @@
 import mysql from "mysql2";
+import dotenv from "dotenv";
 
 export const db = mysql.createConnection({
-    host: process.env.MYSQL_HOST, // Use a variável de ambiente do Railway
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
+    host: process.env.MYSQLHOST, // Use a variável de ambiente do Railway
+    user: process.env.MYSQLUSER,
+    password: process.env.MYSQLPASSWORD,
     database: "login",
-    port: process.env.MYSQL_PORT || 3306, // Use a porta correta
+    port: process.env.MYSQLPORT || 3306, // Use a porta correta
 });
 
 export const ubs_db = mysql.createConnection({
-    host: process.env.MYSQL_HOST, // Use a variável de ambiente do Railway
-    user: process.env.MYSQL_USER,
-    password: process.env.MYSQL_PASSWORD,
+    host: process.env.MYSQLHOST, // Use a variável de ambiente do Railway
+    user: process.env.MYSQLUSER,
+    password: process.env.MYSQLPASSWORD,
     database: "ubs",
-    port: process.env.MYSQL_PORT || 3306, // Use a porta correta
+    port: process.env.MYSQLPORT || 3306, // Use a porta correta
 });
 
-console.log('Host:', process.env.MYSQL_HOST);
-console.log('User:', process.env.MYSQL_USER);
-console.log('Password:', process.env.MYSQL_PASSWORD);
-console.log('Port:', process.env.MYSQL_PORT);
+console.log('Host:', process.env.MYSQLHOST);
+console.log('User:', process.env.MYSQLUSER);
+console.log('Password:', process.env.MYSQLPASSWORD);
+console.log('Port:', process.env.MYSQLPORT);
