@@ -3,8 +3,8 @@ import userRoutes from "./routes/users.js"
 import cors from "cors";
 import dotenv from "dotenv";
 
-dotenv.config(); 
-
+dotenv.config('porta:', process.env.PORT); 
+console.log('Host:', process.env.MYSQL_HOST);
 console.log('Host:', process.env.MYSQL_HOST);
 console.log('User:', process.env.MYSQL_USER);
 console.log('Password:', process.env.MYSQL_PASSWORD);
