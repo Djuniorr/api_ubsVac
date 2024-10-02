@@ -3,12 +3,8 @@ import userRoutes from "./routes/users.js"
 import cors from "cors";
 import dotenv from "dotenv";
 
-dotenv.config('porta:', process.env.PORT); 
-console.log('Host:', process.env.MYSQL_HOST);
-console.log('Host:', process.env.MYSQL_HOST);
-console.log('User:', process.env.MYSQL_USER);
-console.log('Password:', process.env.MYSQL_PASSWORD);
-console.log('Port:', process.env.MYSQL_PORT);
+console.log(process.env); // Isso irá listar todas as variáveis de ambiente
+
 
 
 const app = express();
